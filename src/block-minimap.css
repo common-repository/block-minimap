@@ -1,0 +1,70 @@
+.minimap-block {
+	background-color: #fefefe;
+	width: 240px;
+	min-height: 10px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	font-size: .7em;
+	line-height: 1;
+	padding: 0;
+	list-style-type: disc;
+	color: transparent;
+	text-shadow: 0 0 4px rgba(0,0,0,1);
+	display: table;
+}
+
+.minimap-block.title {
+	font-size: 1.5em;
+	line-height: 1.2;
+}
+
+.minimap-block.core-list ul {
+	padding-left: 10px;
+	list-style: disc;
+}
+
+.minimap-overlay {
+	background-color: #666;
+	opacity: .5;
+	width: 240px;
+    position: absolute;
+	z-index: 1;
+	text-shadow: 0 0 1px rgba(0,0,0,.5);
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+}
+
+.minimap-block.core-quote,
+.minimap-block.core-button,
+.minimap-block.core-gallery,
+.minimap-block.core-pullquote,
+.minimap-block.core-embed-vimeo {
+	background-image: url("https://ipsumimage.appspot.com/240x240?l=&s=30");
+	background-size: cover;
+	opacity: .2;
+    vertical-align: -50%;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 30px;
+	text-align: center;
+}
+
+.minimap-block.core-gallery:after {
+	content: 'Gallery';
+}
+
+.minimap-block.core-embed-vimeo:after {
+	content: 'Vimeo';
+}
+
+.minimap-block.core-pullquote:after {
+	content: 'Pullquote';
+}
+
+.minimap-block.core-button:after {
+	content: 'Button';
+}
+
+.minimap-block.core-quote:after {
+	content: 'Quote';
+}
